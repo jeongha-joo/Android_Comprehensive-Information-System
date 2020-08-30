@@ -1,5 +1,6 @@
 package com.example.registeration;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -146,9 +147,13 @@ public class RegisterActivity extends AppCompatActivity {
                             if (success) {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 dialog = builder.setMessage("회원 등록에 성공했습니다.")
-                                        .setPositiveButton("확인", null).create();
+                                        .setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                finish();
+                                            }
+                                        }).create();
                                 dialog.show();
-                                finish();
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 dialog = builder.setMessage("회원 등록에 실패했습니다.")
@@ -170,6 +175,7 @@ public class RegisterActivity extends AppCompatActivity {
         protected void onStop() {
             super.onStop();
             if(dialog != null){
+                dialog.dismiss();
                 dialog = null;
         }
     }
