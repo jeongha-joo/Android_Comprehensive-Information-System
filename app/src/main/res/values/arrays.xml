@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="major">
+        <item>드론로봇</item>
+        <item>컴퓨터공학</item>
+        <item>사물인터넷</item>
+        <item>소프트웨어공학</item>
+        <item>빅데이터/인공지능</item>
+        <item>융합보안</item>
+        <item>정보보안</item>
+        <item>해킹</item>
+        <item>디지털포렌식</item>
+        <item>시각디자인</item>
+        <item>일러스트</item>
+        <item>멀티미디어</item>
+        <item>웹툰</item>
+        <item>만화애니메이션</item>
+        <item>게임기획</item>
+        <item>게임인공지능 프로그래밍</item>
+        <item>게임아트디자인</item>
+    </string-array>
+
+
+</resources>
