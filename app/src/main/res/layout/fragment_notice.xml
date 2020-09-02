@@ -5,41 +5,34 @@
     android:layout_height="match_parent"
     tools:context=".NoticeFragment">
 
-    <FrameLayout
-        android:id="@+id/notice"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorStatusBar"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@color/colorPrimaryDark"
-            android:orientation="vertical">
 
+        <ImageButton
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/korea" />
 
-            <ImageButton
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:background="#FFFFFF"
-                android:scaleType="centerCrop"
-                android:src="@drawable/korea" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="0sp"
+            android:text="공지사항"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:padding="0sp"
-                android:text="공지사항"
-                android:textColor="#ffffff"
-                android:textSize="25dp"
-                android:textStyle="bold" />
+    </LinearLayout>
 
-        </LinearLayout>
-
-    </FrameLayout>
 
 </FrameLayout>

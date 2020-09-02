@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#ffffff"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -74,13 +74,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <RelativeLayout
             android:id="@+id/fragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </RelativeLayout>
+
+        <ListView
+            android:id="@+id/noticeListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:padding="10dp"
+            android:divider="#ffffff"
+            android:background="@color/colorPrimary"
+            android:dividerHeight="20dp" />
+
+
 
     </FrameLayout>
 
