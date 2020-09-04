@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.example.registeration;  // 회원가입 데이터베이스 요청
 
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;

@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.example.registeration;  // 공지사항 틀
 
 public class Notice {
 

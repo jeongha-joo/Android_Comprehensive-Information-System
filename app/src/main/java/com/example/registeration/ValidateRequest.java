@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.example.registeration;  // 아이디 중복확인
 
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;

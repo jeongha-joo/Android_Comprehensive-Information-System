@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.example.registeration;  // 로그인 화면
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;

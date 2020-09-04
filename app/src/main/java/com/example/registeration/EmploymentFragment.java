@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.example.registeration;  //취업 정보 프래그먼트
 
 import android.os.Bundle;
 

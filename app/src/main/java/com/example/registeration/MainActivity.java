@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.example.registeration;  // 공지사항 데이터 불러오기 및 프래그먼트 버튼
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.commit();
         noticeListView.setVisibility(View.VISIBLE);
 
+        // 성적조회 버튼
         gradeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 시간표 확인 버튼
         scheduleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 취업정보 버튼
         employmentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -98,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 공지사항 버튼
         noticeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -114,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    // 공지사항 데이터 불러오기
      class BackgroundTask extends AsyncTask<Void, Void, String> {
 
         String target;

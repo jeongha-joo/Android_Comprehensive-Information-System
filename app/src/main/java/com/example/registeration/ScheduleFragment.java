@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.example.registeration;  // 시간표 프래그먼트
 
 import android.os.Bundle;
 

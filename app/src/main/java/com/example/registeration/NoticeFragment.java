@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.example.registeration;  // 공지사항 프래그먼트
 
 import android.content.Context;
 import android.os.Bundle;

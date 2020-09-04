@@ -1,4 +1,4 @@
-package com.example.registeration;
+package com.example.registeration;  // 회원가입 화면
 
 import android.content.DialogInterface;
 import android.os.Bundle;
