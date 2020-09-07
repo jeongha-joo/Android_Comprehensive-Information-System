@@ -6,4 +6,5 @@
     <color name="colorWarning">#F3437F</color>
     <color name="colorStatusBar">#007BC2</color>
     <color name="colorGray">#8c8c8c</color>
+    <color name="colorList">#4C2828</color>
 </resources>

@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -47,11 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
         new BackgroundTask().execute();
 
+        // 첫 화면 프래그먼트 설정
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment, new NoticeFragment());
         fragmentTransaction.commit();
-        noticeListView.setVisibility(View.VISIBLE);
 
         // 성적조회 버튼
         gradeButton.setOnClickListener(new View.OnClickListener() {
@@ -176,5 +177,16 @@ public class MainActivity extends AppCompatActivity {
             }
             noticeListView.setAdapter(adapter);
         }
+    }
+    private long lastTimeBackPressed;
+
+    @Override
+    public void onBackPressed() {
+        if(System.currentTimeMillis() - lastTimeBackPressed < 1500){
+            finish();
+            return;
+        }
+        Toast.makeText(this,"'뒤로' 버튼을 한 번 더 눌러 종료합니다.",Toast.LENGTH_SHORT);
+        lastTimeBackPressed = System.currentTimeMillis();
     }
 }

@@ -15,6 +15,7 @@
         android:id="@+id/noticeText"
         android:drawableStart="@drawable/ic_baseline_comment_24"
         android:drawableLeft="@drawable/ic_baseline_comment_24"
+        android:drawablePadding="10dp"
         android:background="#E7E7EA"
         android:textStyle="bold"/>
 
